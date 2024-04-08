@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Тестовое задание</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="">
+	<meta name="title" content="Тестовое задание">
+	<meta name="description" content="Тестовое задание">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<div class="page">
+		<header class="header">
+			<div class="container">
+				<div class="header__line">
+					<a href="/" class=" header__logo logo">
+						<img src="img/logo.svg" width="247" height="35" alt="Holikids">
+					</a>
+					<nav class="header__menu menu">
+						<ul class="menu__list">
+							<li class="menu__item menu__item_active">
+								<a href="#" class="menu__link">Бизнес</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" class="menu__link">О нас</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" class="menu__link">Цены</a>
+							</li>
+							<li class="menu__item">
+								<a href="#order" class="menu__link js-navigate">Оформить заказ</a>
+							</li>
+						</ul>
+					</nav>
+					<button class="header__burger burger" type="button" aria-label="Burger menu">
+						<span class="burger__line"></span>
+						<span class="burger__line"></span>
+						<span class="burger__line"></span>
+					</button>
+				</div>
+			</div>
+		</header>
+		<main class="page__content">
+			<div class="hero">
+				<div class="container">
+					<div class="hero__content">
+						<h1 class="hero__title"><span>Lorem</span> ipsum dolor sit ametconsectetur <span>adipiscing</span></h1>
+						<p class="hero__description">
+							At vero eos et accusamus et iusto odio dignissimos ducimus!
+						</p>
+						<ul class="hero__list">
+							<li class="hero__item">- Totam rem aperiam eaque ipsa</li>
+							<li class="hero__item">- Sit voluptatem accusantium doloremque laudantium</li>
+							<li class="hero__item">- Sed ut perspiciatis, unde omnis iste natus error</li>
+						</ul>
+						<div class="hero__buttons">
+							<button class="button button_primary">Заказать</button>
+							<button class="button button_secondary">Подробнее</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="order" id="order">
+				<div class="container">
+					<h2 class="order__title">
+						Оформление <span>заказа</span>
+					</h2>
+					<p class="order__description">
+						Перед заполнением формы ознакомьтесь с нашей схемой работы!
+					</p>
+					<ul class="order__list">
+						<li class="order__item">
+							<div class="order__item-icon">
+								<img src="img/icon-1.svg" width="35" height="35" alt="">
+							</div>
+							<p class="order__item-title">Lorem ipsum dolor sit amet</p>
+						</li>
+						<li class="order__item">
+							<div class="order__item-icon">
+								<img src="img/icon-2.svg" width="31" height="32" alt="">
+							</div>
+							<p class="order__item-title">Сonsecteturadipiscing elit</p>
+						</li>
+						<li class="order__item">
+							<div class="order__item-icon">
+								<img src="img/icon-3.svg" width="40" height="43" alt="">
+							</div>
+							<p class="order__item-title">Sed do eiusmod tempor</p>
+						</li>
+						<li class="order__item">
+							<div class="order__item-icon">
+								<img src="img/icon-4.svg" width="37" height="29" alt="">
+							</div>
+							<p class="order__item-title">Esse cillum dolore eu fugiat</p>
+						</li>
+						<li class="order__item">
+							<div class="order__item-icon">
+								<img src="img/icon-5.svg" width="39" height="27" alt="">
+							</div>
+							<p class="order__item-title">Excepteur sint occaecat cupidatat non proident</p>
+						</li>
+					</ul>
+					<form action="" class="order__form form">
+						<div class="form__fields">
+							<div class="form__field field">
+								<div class="field__select">
+									<input type="text" name="type" value="Выберите тип системы" class="field__select-value">
+									<div class="field__select-current">Выберите тип системы</div>
+									<div class="field__select-options">
+										<button type="button" data-value="Sed ut perspiciatis" class="field__select-option">Sed ut perspiciatis</button>
+										<button type="button" data-value="Nemo enim ipsam" class="field__select-option">Nemo enim ipsam</button>
+										<button type="button" data-value="NEt harum quidem" class="field__select-option">NEt harum quidem</button>
+										<button type="button" data-value="Temporibus autem" class="field__select-option">Temporibus autem</button>
+										<button type="button" data-value="Itaque earum rerum" class="field__select-option">Itaque earum rerum</button>
+										<button type="button" data-value="Sed ut perspiciatis2" class="field__select-option">Sed ut perspiciatis2</button>
+										<button type="button" data-value="Nemo enim ipsam2" class="field__select-option">Nemo enim ipsam2</button>
+										<button type="button" data-value="NEt harum quidem2" class="field__select-option">NEt harum quidem2</button>
+									</div>
+								</div>
+							</div>
+							<div class="form__field field">
+								<input type="email" class="field__input" name="email" placeholder="Ваш e-mail">
+							</div>
+							<div class="form__field field">
+								<input type="text" class="field__input" name="name" placeholder="Ваше имя">
+							</div>
+							<div class="form__field range">
+								<div class="range__head">
+									<p class="range__title">Sed ut perspiciatis, unde omnis iste natus</p>
+									<p class="range__percent js-percent">75%</p>
+								</div>
+								<input class="range__field js-range" type="range" min="0" max="100" value="75" name="range" step="1">
+							</div>
+							<div class="form__field clip-file">
+								<input type="file" name="file" class="clip-file__input">
+								<button type="button" class="clip-file__button">
+									<img src="img/clip.svg" width="18" height="21" alt="">
+									Прикрепить файл
+								</button>
+							</div>
+						</div>
+						<div class="form__buttons">
+							<button class="button button_big button_primary">Заказать</button>
+						</div>
+					</form>
+				</div>
+			</div>
+			<footer class="footer">
+				<div class="container">
+					<div class="footer__line">
+						<p class="footer__copyright">© 2018 «LoremIpsum.net» Все права защищены.</p>
+						<ul class="footer__payments payments">
+							<li class="payments__item">
+								<img src="img/qiwi.svg" width="21" height="20" alt="">
+								Qiwi wallet
+							</li>
+							<li class="payments__item">
+								<img src="img/ya.svg" width="15" height="18" alt="">
+								Yandex Money
+							</li>
+							<li class="payments__item">
+								<img src="img/wm.svg" width="19" height="18" alt="">
+								Web Money
+							</li>
+						</ul>
+						<ul class="footer__links links">
+							<li class="links__item">
+								<a href="mailto:info@ipsum228.com" target="_blank" class="links__item-link">
+									<img src="img/mail.svg" width="16" height="13" alt="">
+									info@ipsum228.com
+								</a>
+							</li>
+							<li class="links__item">
+								<a href="https://vk.com/" target="_blank" class="links__item-link">
+									<img src="img/vk.svg" width="16" height="13" alt="">
+									Мы вконтакте
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</footer>
+		</main>
+	</div>
+	<script defer src="js/main.js"></script>
+</body>
+</html>
